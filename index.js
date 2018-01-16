@@ -45,9 +45,11 @@ function addToCart(item) {
  }
 
 function total() {
+  sum = 0 
   for(var i = 0; i < cart.length; i++) {
-    sum = 0 
-    cart[i] + cart[i+1]
+    for(var item in cart[i]) {
+      sum += cart[i][item]
+    }
   }
 }
 
