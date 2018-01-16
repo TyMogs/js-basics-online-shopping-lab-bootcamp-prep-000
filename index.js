@@ -12,11 +12,11 @@ function setCart(c) {
 
 function addToCart(item) {
   var price = Math.floor(Math.random()*100) + 1;
-  var item_obj = {}
+  var item_obj = {};
   item_obj = {[item]: price};
   cart.push(item_obj);
   console.log(`${item} has been added to your cart.`);
-  return cart
+  return cart;
 
 }
 
@@ -45,12 +45,13 @@ function addToCart(item) {
  }
 
 function total() {
-  sum = 0 
+  sum = 0;
   for(var i = 0; i < cart.length; i++) {
     for(var item in cart[i]) {
-      sum += cart[i][item]
+      sum += cart[i][item];
     }
   }
+  return sum
 }
 
 function removeFromCart(item) {
