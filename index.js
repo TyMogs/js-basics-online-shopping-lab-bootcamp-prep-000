@@ -45,7 +45,10 @@ function addToCart(item) {
  }
 
 function total() {
-  // write your code here
+  for(var i = 0; i < cart.length; i++) {
+    sum = 0 
+    cart[i] + cart[i+1]
+  }
 }
 
 function removeFromCart(item) {
