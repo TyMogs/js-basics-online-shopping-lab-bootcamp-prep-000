@@ -51,7 +51,7 @@ function total() {
       sum += cart[i][item];
     }
   }
-  return sum
+  return sum;
 }
 
 function removeFromCart(item) {
