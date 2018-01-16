@@ -20,19 +20,19 @@ function addToCart(item) {
 
 }
 
-/*function viewCart() {
-  if(cart.length === 0) {
-    console.log("Your shopping cart is empty.")
-  } else if (cart.length === 1){
-    var in_cart = []
-    for(var i = 0; i < cart.length; i++) {
-     for (var item in cart[i]) {
-      in_cart.push(in_cart + " at $" + cart[i][in_cart])
-    }
-   }
-    console.log(`In your cart you have ${in_cart.join(", ")}.`)
-  }
-}*/
+/*+function viewCart() {
+ +  if (cart.length === 0) {
+ +    console.log("Your shopping cart is empty.")
+ +  } else {
+ +    var items = [];
+ +    for (var i = 0; i < cart.length; i++) {
+ +      for (var item in cart[i]) {
+ +        items.push(item + " at $" + cart[i][item])
+ +      }
+ +    }
+ +    console.log("In your cart, you have " + items.join(", ") + ".");
+ +  }
+ +}*/
 
  function viewCart() {
    if (cart.length === 0) {
